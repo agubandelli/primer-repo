@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(tipo/Poppins-Regular.ttf);
+}
+
+
+
+:root {
+  --primary-color: #4891ff;
+  --light-color: #f4f4f6;
+  --dark-color: #111;
+
+    --spacing-xs: .25rem;
+    --spacing-sm: .5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedorMaximo {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contenedorMinimo {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-xl);
+    
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-xxl);
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    padding: 10px 10px;  
+    border-radius: var(--spacing-sm); 
+}
+
+.nav-links a:hover {
+   background-color: #c2bebe61;
+}
+
+
+/*----------------------hero---------------------------*/
+#hero {
+  padding-top: var(--spacing-xxl);
+
+
+  background: url(img/hero-bg.png) no-repeat;
+  background-size: contain;
+  background-position: center ;
+  min-height: 850px;
+}
+
+
+.hero-contenedor {
+   width: 50%;
+}
+
+.hero-contenedor h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-contenedor p {
+  margin-bottom: var(--spacing-xl);
+}
+
+
+/* -------------video---------- */
+
+#video {
+    background: var(--dark-color);
+    color: var(--light-color);
+  padding: 10px 0 40px;
+
+
+}
+
+#video h2 {
+ width: 100%;
+ text-align: center;
+ padding: 2rem 2rem;
+}
+
+#video .video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#video .video-preview {
+  margin-bottom: 20px;
+}
+
+ /*--------------- testimonios---------- */
+
+ #testimonios {
+     background: var(--dark-color);
+    color: var(--light-color);
+  padding: 40px 0;
+  
+}
+
+.testimonio-contenedor{
+border-top: 1px solid var(--light-color);
+}
+
+.card {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#testimonios h2{
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: var(--spacing-xl);
+  padding-top: var(--spacing-xxl);
+}
+#testimonios .testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+#testimonios .card p:nth-child(2) {
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+
+/*--------------------- pricing-------------- */
+
+.pricing { 
+    padding: var(--spacing-xxl);
+}
+.pricing .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+
+
+
+}
+
+.pricing-section{ 
+    border-bottom: 1px solid var(--dark-color);
+    padding: var(--spacing-md);
+}
+
+.pricing .pricing-card-subheading {
+  margin-bottom: 30px;
+}
+
+.pricing .linea {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.pricing ul {
+  margin: 30px 0;
+}
+
+.pricing ul li {
+  margin-bottom: 20px;
+}
+
+.pricing ul li i {
+  margin-right: 10px;
+}
+
+.pricing .pricing-footer {
+  margin: 30px 0;
+}
+
+.cardBlack {
+  background: var(--dark-color);
+  color: var(--light-color);
+  border-radius: 10px;
+  padding: var(--spacing-xxl);
+}
+
+.cardBright {
+  background: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 10px;
+  padding: var(--spacing-xxl);
+}
+
+
+
+/*---------------------------- FAQ-------------------- */
+/* FAQ */
+.faq {
+  padding: 40px 0;
+}
+
+.faq .faq-group {
+  padding-bottom: 20px;
+  
+}
+
+.faq .faq-group .faq-group-header {
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq .faq-group .faq-group-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+
+
+
+.faq ul.faq-menu {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq ul.faq-menu li {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+
+/* -----------------Footer -------------------*/
+.footer {
+  padding: 40px 0;
+  background-color: var(--dark-color);
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+  color: var(--light-color);
+}
+
+.footer ul li {
+  line-height: 2.5;
+  list-style: none;
+}
+
+.footer a {
+  color: #ccc;
+}
+
+.footer i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .card {
+  margin: 20px 30px 30px 0;
+}
+
+.footer input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+
+/*--------- botones ----------*/
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn.primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+
+@media screen and (min-width: 670px) {
+    .noVisibleDesktop {
+        display: none;
+    }
+}
+
+@media (max-width: 670px) { 
+
+    .noVisibleMobile {
+        display: none;
+    }
+
+#hero {
+  padding-top: var(--spacing-xxl);
+  background: url(img/hero-bg-mobile.png) no-repeat;
+  background-size: 350px 400px;
+  background-position:bottom;
+  min-height: 900px;
+  
+
+
+}
+
+#hero .hero-contenedor,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  #hero .hero-buttons .btn {
+    margin-bottom: 10px;
+    width: 100%;
+    display: block;
+  }
+
+   #testimonios .testimonio-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+ #testimonios .testimonios-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+   .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid {
+    text-align: center;
+  }
+
+
+
+
+}
